@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sge_mobileandroid.sge_mobileandroid.Cadastro_Clientes">
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nome_ID"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Nome" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/fone_ID"
+        android:hint="Fone"
+        android:layout_below="@+id/email_ID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/endereco_ID"
+        android:layout_alignEnd="@+id/endereco_ID" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/endereco_ID"
+        android:hint="Endereço"
+        android:layout_below="@+id/fone_ID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email_ID"
+        android:layout_below="@+id/nome_ID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/nome_ID"
+        android:layout_alignEnd="@+id/nome_ID"
+        android:hint="E-mail" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grava"
+        android:id="@+id/grava_ID"
+        android:layout_below="@+id/email_ID"
+        android:layout_toRightOf="@+id/fone_ID"
+        android:layout_alignRight="@+id/email_ID"
+        android:layout_alignEnd="@+id/email_ID" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exclui"
+        android:id="@+id/exclui_ID"
+        android:layout_below="@+id/grava_ID"
+        android:layout_toRightOf="@+id/endereco_ID"
+        android:layout_alignRight="@+id/grava_ID"
+        android:layout_alignEnd="@+id/grava_ID" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_ID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/voltar_ID" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:id="@+id/voltar_ID"
+        android:layout_alignRight="@+id/listView_ID"
+        android:layout_alignEnd="@+id/listView_ID"
+        android:layout_below="@+id/exclui_ID"
+        android:layout_toLeftOf="@+id/exclui_ID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+</ScrollView>
